@@ -1,0 +1,23 @@
+#include <Servo.h>
+Servo servo;
+
+int transistorPin = 5;
+
+void setup() {
+
+   pinMode(transistorPin, OUTPUT);
+    
+  digitalWrite(transistorPin, HIGH);
+  servo.attach(3);
+  
+  
+}
+
+void loop(){
+ 
+
+  digitalWrite(transistorPin, HIGH);
+  servo.write(180);
+  delay(2000);
+       
+}
